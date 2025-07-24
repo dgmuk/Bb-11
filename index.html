@@ -1,1 +1,243 @@
-1
+<!DOCTYPE html>
+<html lang="ru" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Гайд: Как внедрять привычки без стресса</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        /* Исправление для Google Sites */
+        html, body {
+            height: auto !important;
+            min-height: 1px !important;
+            overflow: visible !important; 
+        }
+
+        /* Анимация для плавного появления блоков */
+        .fade-in-item {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 0.6s ease-out forwards;
+        }
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Интерактивная фишка: "Карточка с секретом" */
+        .reveal-card {
+            background-color: #374151; /* gray-700 */
+            padding: 1rem;
+            border-radius: 0.75rem;
+            margin-top: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+        }
+        .reveal-card .reveal-content {
+            opacity: 0.6;
+            transition: opacity 0.3s ease-in-out;
+        }
+        .reveal-card:hover, .reveal-card:focus-within {
+            background-color: #4b5563; /* gray-600 */
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        }
+        .reveal-card:hover .reveal-content, .reveal-card:focus-within .reveal-content {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-200">
+
+    <div id="main-container" class="container mx-auto max-w-3xl p-4 sm:p-8">
+        
+        <!-- Заголовок -->
+        <header class="text-center mb-10">
+            <h1 class="text-3xl sm:text-4xl font-bold text-white">
+                📘 ГАЙД
+            </h1>
+            <p class="mt-2 text-lg text-gray-400">Как внедрять привычки без стресса</p>
+            <p class="mt-4 text-base text-gray-400 max-w-xl mx-auto">Устойчивые изменения это не спринт, а марафон. Главное: делать шаги, которые ты можешь повторить завтра.</p>
+        </header>
+
+        <!-- Блоки с контентом -->
+        <main class="space-y-6">
+            
+            <!-- Пункт 1 -->
+            <div class="bg-gray-800 rounded-2xl shadow-lg p-6 fade-in-item" style="animation-delay: 100ms;">
+                <h3 class="font-bold text-xl text-white mb-3">🧠 1. Начни с минимума</h3>
+                <p class="text-gray-300">✅ Не пытайся изменить всё сразу.</p>
+                <div class="reveal-card" tabindex="0">
+                    <p class="reveal-content">➡ Вместо "буду тренироваться час в день", начни с 10–15 минут.</p>
+                    <p class="reveal-content mt-2">➡ Вместо "больше никакого сладкого", начни с уменьшения количества вдвое.</p>
+                </div>
+                <div class="mt-4 bg-gray-700/50 border-l-4 border-teal-500 p-3 rounded-r-lg">
+                    <p class="text-sm text-teal-200">Принцип: лучше маленько и стабильно, чем "много и один раз".</p>
+                </div>
+            </div>
+
+            <!-- Пункт 2 -->
+            <div class="bg-gray-800 rounded-2xl shadow-lg p-6 fade-in-item" style="animation-delay: 200ms;">
+                <h3 class="font-bold text-xl text-white mb-3">📅 2. Одна привычка за раз на 7–30 дней</h3>
+                <p class="text-gray-300">📌 Фокусируйся на одной привычке, пока она не станет автоматической.</p>
+                <div class="reveal-card" tabindex="0">
+                     <p class="reveal-content">Ставь себе цель: «Эту привычку я внедряю ближайшие 2 недели».</p>
+                </div>
+                <div class="mt-4 bg-gray-700/50 border-l-4 border-teal-500 p-3 rounded-r-lg">
+                    <p class="text-sm text-teal-200">🔁 Когда внедришь, переходи к следующей.</p>
+                </div>
+            </div>
+
+            <!-- Пункт 3 -->
+            <div class="bg-gray-800 rounded-2xl shadow-lg p-6 fade-in-item" style="animation-delay: 300ms;">
+                <h3 class="font-bold text-xl text-white mb-3">✍️ 3. Веди трекер привычек</h3>
+                <p class="text-gray-300">📊 Отмечай каждый день выполнение: ✅ или ❌</p>
+                <div class="reveal-card" tabindex="0">
+                     <p class="reveal-content">Это даёт мотивацию, чувство контроля и прогресса.</p>
+                </div>
+                <div class="mt-4 bg-gray-700/50 border-l-4 border-teal-500 p-3 rounded-r-lg">
+                    <p class="text-sm text-teal-200">🧩 Даже если пропустил день, не бросай. Возвращайся и продолжай.</p>
+                </div>
+            </div>
+
+            <!-- Пункт 4 -->
+            <div class="bg-gray-800 rounded-2xl shadow-lg p-6 fade-in-item" style="animation-delay: 400ms;">
+                <h3 class="font-bold text-xl text-white mb-3">🔄 4. Привязывай к уже существующим ритуалам</h3>
+                 <p class="text-gray-300">🪞 Пример: хочешь пить больше воды, ставь стакан возле зубной щётки и пей после чистки зубов.</p>
+                <div class="mt-4 bg-gray-700/50 border-l-4 border-teal-500 p-3 rounded-r-lg">
+                    <p class="text-sm text-teal-200">Это называется "привязка к якорю", она помогает делать новые действия привычными.</p>
+                </div>
+            </div>
+
+            <!-- Пункт 5 -->
+            <div class="bg-gray-800 rounded-2xl shadow-lg p-6 fade-in-item" style="animation-delay: 500ms;">
+                <h3 class="font-bold text-xl text-white mb-3">🚫 5. Не наказывай себя за срывы</h3>
+                <p class="text-gray-300">🤯 Пропустил день? ОК. Срыв это не провал, а часть процесса.</p>
+                <div class="mt-4 bg-gray-700/50 border-l-4 border-teal-500 p-3 rounded-r-lg">
+                    <p class="text-sm text-teal-200">Главное: возвращайся. Делай как можешь, не как идеально.</p>
+                </div>
+            </div>
+
+            <!-- Пункт 6 -->
+            <div class="bg-gray-800 rounded-2xl shadow-lg p-6 fade-in-item" style="animation-delay: 600ms;">
+                <h3 class="font-bold text-xl text-white mb-3">🎯 6. Формулируй привычки как конкретные действия</h3>
+                <p class="text-gray-300">❌ «Буду есть правильно» это слишком абстрактно.</p>
+                <div class="reveal-card" tabindex="0">
+                     <p class="reveal-content">✅ «Буду добавлять овощи к каждому ужину»: понятно, конкретно, измеримо.</p>
+                </div>
+            </div>
+
+            <!-- Пункт 7 -->
+            <div class="bg-gray-800 rounded-2xl shadow-lg p-6 fade-in-item" style="animation-delay: 700ms;">
+                <h3 class="font-bold text-xl text-white mb-3">📣 7. Открытая поддержка</h3>
+                <p class="text-gray-300">👥 Расскажи близким, что ты внедряешь. Это создаёт элемент ответственности.</p>
+                <div class="reveal-card" tabindex="0">
+                     <p class="reveal-content">💬 Или поделись в чате с тренером, чтобы получить поддержку и напоминание.</p>
+                </div>
+            </div>
+
+            <!-- ИСПРАВЛЕННАЯ АДАПТИВНАЯ ТАБЛИЦА -->
+            <div class="bg-gray-800 rounded-2xl shadow-lg p-6 fade-in-item" style="animation-delay: 800ms;">
+                <h3 class="font-bold text-xl text-white mb-4">🧩 Пример простой стратегии:</h3>
+                <div class="space-y-4">
+                    <!-- Заголовок таблицы (виден только на больших экранах) -->
+                    <div class="hidden sm:grid sm:grid-cols-3 sm:gap-4 font-semibold text-gray-400 px-4">
+                        <div>Неделя</div>
+                        <div>Новая привычка</div>
+                        <div>Как внедряю</div>
+                    </div>
+                    <!-- Строки таблицы -->
+                    <div class="bg-gray-700/50 rounded-lg p-4 space-y-2 sm:space-y-0 sm:grid sm:grid-cols-3 sm:gap-4 sm:items-center">
+                        <div>
+                            <div class="font-semibold text-gray-400 sm:hidden mb-1">Неделя</div>
+                            <div class="font-bold text-white">1</div>
+                        </div>
+                        <div>
+                            <div class="font-semibold text-gray-400 sm:hidden mb-1">Новая привычка</div>
+                            <div>Стакан воды утром</div>
+                        </div>
+                        <div>
+                            <div class="font-semibold text-gray-400 sm:hidden mb-1">Как внедряю</div>
+                            <div>Ставлю возле кровати, пью сразу после пробуждения</div>
+                        </div>
+                    </div>
+                    <div class="bg-gray-700/50 rounded-lg p-4 space-y-2 sm:space-y-0 sm:grid sm:grid-cols-3 sm:gap-4 sm:items-center">
+                        <div>
+                            <div class="font-semibold text-gray-400 sm:hidden mb-1">Неделя</div>
+                            <div class="font-bold text-white">2</div>
+                        </div>
+                        <div>
+                            <div class="font-semibold text-gray-400 sm:hidden mb-1">Новая привычка</div>
+                            <div>Ходьба 20 минут в день</div>
+                        </div>
+                        <div>
+                            <div class="font-semibold text-gray-400 sm:hidden mb-1">Как внедряю</div>
+                            <div>Выхожу на прогулку после ужина</div>
+                        </div>
+                    </div>
+                    <div class="bg-gray-700/50 rounded-lg p-4 space-y-2 sm:space-y-0 sm:grid sm:grid-cols-3 sm:gap-4 sm:items-center">
+                        <div>
+                            <div class="font-semibold text-gray-400 sm:hidden mb-1">Неделя</div>
+                            <div class="font-bold text-white">3</div>
+                        </div>
+                        <div>
+                            <div class="font-semibold text-gray-400 sm:hidden mb-1">Новая привычка</div>
+                            <div>Овощи в каждый ужин</div>
+                        </div>
+                        <div>
+                            <div class="font-semibold text-gray-400 sm:hidden mb-1">Как внедряю</div>
+                            <div>Заготавливаю порционно заранее</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Заключение -->
+             <div class="bg-gray-800 border-l-4 border-blue-500 text-blue-200 p-4 rounded-r-lg fade-in-item" style="animation-delay: 900ms;" role="alert">
+                <p class="font-bold">💬 Помни:</p>
+                <p class="mt-1">Ты не ломаешь старое "я", ты строишь новое, с опорой на себя и поддержку.</p>
+            </div>
+        </main>
+
+        <!-- Подвал -->
+        <footer class="text-center mt-12 border-t border-gray-700 pt-6">
+            <p class="text-sm text-gray-500">&copy; 2025 г. Все права защищены. Специально для проекта Body balance.</p>
+        </footer>
+
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const container = document.getElementById('main-container');
+
+            if ('ResizeObserver' in window) {
+                const observer = new ResizeObserver(entries => {
+                    if (entries.length > 0) {
+                        const height = entries[0].target.scrollHeight;
+                        document.body.style.height = height + 'px';
+                        document.documentElement.style.height = height + 'px';
+                    }
+                });
+                if (container) {
+                    observer.observe(container);
+                }
+            } else {
+                const resizeFallback = () => {
+                    if(container) document.body.style.height = container.scrollHeight + 'px';
+                };
+                setInterval(resizeFallback, 300);
+                window.addEventListener('resize', resizeFallback);
+                resizeFallback();
+            }
+        });
+    </script>
+</body>
+</html>
